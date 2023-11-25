@@ -8,7 +8,7 @@ import CharacterGalleryRickAndMorty from 'rickAndMortyMicrofrontend/CharacterGal
 import { Content, EContent } from './ShowCharacters.types'
 import { StyledButton, StyledButtonContainer } from './ShowCharacters.styles'
 
-const ShowCharacters = () => {
+export const ShowCharacters = () => {
   const [franchise, setFranchise] = useState<Content>(EContent.RICK_AND_MORTY)
 
   return (
@@ -38,5 +38,3 @@ const ShowCharacters = () => {
     </div>
   )
 }
-
-export default ShowCharacters
