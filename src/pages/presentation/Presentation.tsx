@@ -1,11 +1,7 @@
-import ShowCharacters from '../../components/showCharacters/showCharacters'
+import ShowCharacters from '../../components/ShowCharacters/ShowCharacters'
 
 const Presentation = () => {
-  return (
-    <div>
-      <ShowCharacters />
-    </div>
-  )
+  return <ShowCharacters />
 }
 
 export default Presentation

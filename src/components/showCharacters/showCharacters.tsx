@@ -1,40 +1,35 @@
 import { useState } from 'react'
 
 // @ts-expect-error skip type
-import CharacterGalleryHarryPotter from 'harryPotterMicrofrontend/characterGallery'
+import CharacterGalleryHarryPotter from 'harryPotterMicrofrontend/CharacterGallery'
 
 // @ts-expect-error skip type
-import CharacterGalleryRickAndMorty from 'rickAndMortyMicrofrontend/characterGallery'
+import CharacterGalleryRickAndMorty from 'rickAndMortyMicrofrontend/CharacterGallery'
+import { Content, EContent } from './ShowCharacters.types'
+import { StyledButton, StyledButtonContainer } from './ShowCharacters.styles'
 
 const ShowCharacters = () => {
-  const [showComponentA, setShowComponentA] = useState<boolean>(false)
+  const [franchise, setFranchise] = useState<Content>(EContent.RICK_AND_MORTY)
 
   return (
     <div>
-      <div
-        style={{
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          padding: 16,
-        }}
-      >
-        <button
-          style={{ marginRight: 4 }}
-          onClick={() => setShowComponentA(true)}
+      <StyledButtonContainer>
+        <StyledButton
+          disabled={franchise === EContent.HARRY_POTTER}
+          onClick={() => setFranchise(EContent.HARRY_POTTER)}
         >
           Harry Potter characters
-        </button>
-        <button
-          style={{ marginLeft: 4 }}
-          onClick={() => setShowComponentA(false)}
+        </StyledButton>
+        <StyledButton
+          disabled={franchise === EContent.RICK_AND_MORTY}
+          onClick={() => setFranchise(EContent.RICK_AND_MORTY)}
         >
           Ricky And Morty characters
-        </button>
-      </div>
+        </StyledButton>
+      </StyledButtonContainer>
 
       <div>
-        {showComponentA ? (
+        {franchise === EContent.HARRY_POTTER ? (
           <CharacterGalleryHarryPotter path="harry-potter" />
         ) : (
           <CharacterGalleryRickAndMorty path="rick-and-morty" />
