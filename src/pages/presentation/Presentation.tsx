@@ -1,4 +1,4 @@
-import ShowCharacters from '../../components/ShowCharacters/ShowCharacters'
+import ShowCharacters from '../../components/ShowCharacters/ShowCharacters.tsx'
 
 const Presentation = () => {
   return <ShowCharacters />
