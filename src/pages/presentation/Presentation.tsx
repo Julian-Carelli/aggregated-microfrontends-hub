@@ -1,5 +1,5 @@
-import LanguageSelector from '../../components/LanguageSelector/LanguageSelector'
-import ShowCharacters from '../../components/ShowCharacters/ShowCharacters'
+import LanguageSelector from '../../components/languageSelector/languageSelector'
+import ShowCharacters from '../../components/showCharacters/showCharacters'
 
 const Presentation = () => {
   return (

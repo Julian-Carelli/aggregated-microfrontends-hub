@@ -3,8 +3,8 @@ import { useTranslation } from 'react-i18next'
 import {
   LanguageIcon,
   LanguageSelectorContainer,
-} from './LanguageSelector.styles'
-import { Language } from './LanguageSelector.types'
+} from './languageSelector.styles'
+import { Language } from './languageSelector.types'
 import { changeLanguage } from 'i18next'
 
 const spanishIcon = '🇪🇸'
