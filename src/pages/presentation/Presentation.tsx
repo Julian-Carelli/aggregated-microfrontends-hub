@@ -1,7 +1,13 @@
+import LanguageSelector from '../../components/LanguageSelector/LanguageSelector'
 import { ShowCharacters } from '../../components/ShowCharacters/ShowCharacters'
 
 const Presentation = () => {
-  return <ShowCharacters />
+  return (
+    <>
+      <LanguageSelector />
+      <ShowCharacters />
+    </>
+  )
 }
 
 export default Presentation

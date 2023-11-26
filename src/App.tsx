@@ -2,6 +2,8 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
 import Presentation from './pages/presentation/Presentation'
 
+import '../i18n.js'
+
 // @ts-expect-error skip type
 import CharacterDetailsHarryPotter from 'harryPotterMicrofrontend/CharacterDetails'
 

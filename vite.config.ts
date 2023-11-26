@@ -13,7 +13,14 @@ export default defineConfig({
         harryPotterMicrofrontend:
           'http://localhost:3006/build/assets/remoteEntry.js',
       },
-      shared: ['react', 'react-dom', 'react-router-dom', 'styled-components'],
+      shared: [
+        'react',
+        'react-dom',
+        'react-router-dom',
+        'styled-components',
+        'react-i18next',
+        'i18next',
+      ],
     }),
   ],
   server: {

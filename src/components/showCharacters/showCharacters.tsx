@@ -18,13 +18,13 @@ export const ShowCharacters = () => {
           disabled={franchise === EContent.HARRY_POTTER}
           onClick={() => setFranchise(EContent.HARRY_POTTER)}
         >
-          Harry Potter characters
+          Harry Potter
         </StyledButton>
         <StyledButton
           disabled={franchise === EContent.RICK_AND_MORTY}
           onClick={() => setFranchise(EContent.RICK_AND_MORTY)}
         >
-          Rick And Morty characters
+          Rick And Morty
         </StyledButton>
       </StyledButtonContainer>
 
