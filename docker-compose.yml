@@ -1,13 +1,13 @@
 version: '3.8'
 
 services:
-  app:
+  vite_docker:
     container_name: aggregated-microfrontends-hub-container
-    image: aggregated-microfrontends-hub-container
-    build:
-      context: .
-      target: development
+    entrypoint: /bin/sh
+    image: node:alpine
     volumes:
-      - ./src:/app/src
+      - .:/app
+    tty: true
     ports:
       - 3000:3000
+    working_dir: /app
