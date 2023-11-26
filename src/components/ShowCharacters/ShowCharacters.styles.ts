@@ -11,6 +11,7 @@ export const StyledButton = styled.button`
   margin-right: 4px;
   margin-left: 4px;
   background-color: #653780;
+  color: white;
   font-weight: 800;
   cursor: ${(props) => (props.disabled ? 'not-allowed' : 'pointer')};
   opacity: ${(props) => (props.disabled ? 0.5 : 1)};

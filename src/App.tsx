@@ -9,10 +9,12 @@ import CharacterDetailsHarryPotter from 'harryPotterMicrofrontend/CharacterDetai
 
 // @ts-expect-error skip type
 import CharacterDetailsRickAndMorty from 'rickAndMortyMicrofrontend/CharacterDetails'
+import Header from './components/Header/Header.js'
 
 export default function App() {
   return (
     <Router>
+      <Header />
       <Routes>
         <Route path="/" element={<Presentation />} />
         <Route

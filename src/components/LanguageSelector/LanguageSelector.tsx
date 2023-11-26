@@ -1,8 +1,7 @@
-import React, { useState } from 'react'
-import { useTranslation } from 'react-i18next'
+import { useState } from 'react'
 import {
-  LanguageIcon,
-  LanguageSelectorContainer,
+  LanguageSelectorWrapper,
+  LanguageOption,
 } from './LanguageSelector.styles'
 import { Language } from './LanguageSelector.types'
 import { changeLanguage } from 'i18next'
@@ -10,29 +9,30 @@ import { changeLanguage } from 'i18next'
 const spanishIcon = '🇪🇸'
 const englishIcon = '🇬🇧'
 
-const LanguageSelector: React.FC = () => {
+const LanguageSelector = () => {
   const [selectedLanguage, setSelectedLanguage] = useState<Language>(
     Language.English,
   )
-  const { t } = useTranslation('translations')
-
   const handleLanguageChange = (language: Language) => {
     changeLanguage(language)
     setSelectedLanguage(language)
   }
 
   return (
-    <LanguageSelectorContainer>
-      <LanguageIcon onClick={() => handleLanguageChange(Language.Spanish)}>
+    <LanguageSelectorWrapper>
+      <LanguageOption
+        selected={selectedLanguage === Language.Spanish}
+        onClick={() => handleLanguageChange(Language.Spanish)}
+      >
         {spanishIcon}
-      </LanguageIcon>
-      <LanguageIcon onClick={() => handleLanguageChange(Language.English)}>
+      </LanguageOption>
+      <LanguageOption
+        selected={selectedLanguage === Language.English}
+        onClick={() => handleLanguageChange(Language.English)}
+      >
         {englishIcon}
-      </LanguageIcon>
-      <span>
-        {t('components.LanguageSelector.textSelector')} {selectedLanguage}
-      </span>
-    </LanguageSelectorContainer>
+      </LanguageOption>
+    </LanguageSelectorWrapper>
   )
 }
 
