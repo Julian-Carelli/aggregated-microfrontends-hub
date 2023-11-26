@@ -5,8 +5,8 @@ import CharacterGalleryHarryPotter from 'harryPotterMicrofrontend/CharacterGalle
 
 // @ts-expect-error skip type
 import CharacterGalleryRickAndMorty from 'rickAndMortyMicrofrontend/CharacterGallery'
-import { Content, EContent } from './showCharacters.types'
-import { StyledButton, StyledButtonContainer } from './showCharacters.styles'
+import { Content, EContent } from './ShowCharacters.types'
+import { StyledButton, StyledButtonContainer } from './ShowCharacters.styles'
 
 const ShowCharacters = () => {
   const [franchise, setFranchise] = useState<Content>(EContent.RICK_AND_MORTY)
