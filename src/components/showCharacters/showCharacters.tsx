@@ -24,7 +24,7 @@ export const ShowCharacters = () => {
           disabled={franchise === EContent.RICK_AND_MORTY}
           onClick={() => setFranchise(EContent.RICK_AND_MORTY)}
         >
-          Ricky And Morty characters
+          Rick And Morty characters
         </StyledButton>
       </StyledButtonContainer>
 
