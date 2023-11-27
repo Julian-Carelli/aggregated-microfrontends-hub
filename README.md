@@ -101,7 +101,7 @@ npm i
 Build the application:
 
 ```
-npm run build (IMPORTANTE)
+npm run build (IMPORTANT)
 ```
 
 Run the command for the development environment:
@@ -151,6 +151,12 @@ Install all project dependencies:
 npm i
 ```
 
+Build the application:
+
+```
+npm run build (IMPORTANT)
+```
+
 Run the command for the development environment:
 
 ```
@@ -191,6 +197,12 @@ Install all project dependencies:
 npm i
 ```
 
+Build the application:
+
+```
+npm run build (IMPORTANT)
+```
+
 Run the command for the development environment:
 
 ```
@@ -229,6 +241,12 @@ Install all project dependencies:
 
 ```
 npm i
+```
+
+Build the application:
+
+```
+npm run build (IMPORTANT)
 ```
 
 Run the command for the development environment:
