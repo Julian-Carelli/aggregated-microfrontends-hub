@@ -1,6 +1,9 @@
 {
     "translations": { 
         "components": {
+            "pageError": {
+                "pageNotFound": "Pagina no encontrada"
+            },
             "LanguageSelector": {
                 "textSelector": "Idioma seleccionado:"
             },

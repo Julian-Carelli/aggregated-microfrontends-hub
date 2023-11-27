@@ -10,8 +10,11 @@ import CharacterDetailsHarryPotter from 'harryPotterMicrofrontend/CharacterDetai
 // @ts-expect-error skip type
 import CharacterDetailsRickAndMorty from 'rickAndMortyMicrofrontend/CharacterDetails'
 import Header from './components/Header/Header.js'
+import NotFoundMessage from './components/NotFoundMessage/NotFoundMessage.js'
+import { useTranslation } from 'react-i18next'
 
 export default function App() {
+  const { t } = useTranslation('translations')
   return (
     <Router>
       <Header />
@@ -24,6 +27,12 @@ export default function App() {
         <Route
           path="/harry-potter/:characterId"
           element={<CharacterDetailsHarryPotter />}
+        />
+        <Route
+          path="*"
+          element={
+            <NotFoundMessage text={t('components.pageError.pageNotFound')} />
+          }
         />
       </Routes>
     </Router>
