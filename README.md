@@ -1,42 +1,42 @@
 # aggregated-microfrontends-hub
 
-Un proyecto Host que abarca a dos microfrontends para su visualizacion
+A Host project that encompasses two microfrontends for visualization.
 
-### Pre-requisitos 📋
+### Prerequisites 📋
 
 ```
 node -v >=v18
-docker (opcional)
+docker (optional)
 
-Tener estos puertos libres:
+Have these ports available:
   - 3000 ==> aggregated-microfrontends-hub (host)
   - 3005 ==> rick-and-morty-microfrontend (microfrontend)
   - 3006 ==> harry-potter-microfrontend (microfrontend)
 ```
 
-### Instalación 🔧
+### Installation 🔧
 
 #### aggregated-microfrontends-hub (HOST)
 
-Clonar proyecto:
+Clone project:
 
 ```
 git clone git@github.com:Julian-Carelli/aggregated-microfrontends-hub.git
 ```
 
-Entrar a la carpeta:
+Enter the folder:
 
 ```
 cd aggregated-microfrontends-hub
 ```
 
-instalar todas las dependencias del proyecto:
+Install all project dependencies:
 
 ```
 npm i
 ```
 
-ejecutar el comando para el ambiente de desarrollo
+Run the command for the development environment:
 
 ```
 npm run dev
@@ -46,31 +46,31 @@ npm run dev
 
 #### rick-and-morty-microfrontend (microfrontend)
 
-Clonar proyecto:
+Clone project:
 
 ```
 git clone git@github.com:Julian-Carelli/rick-and-morty-microfrontend.git
 ```
 
-Entrar a la carpeta:
+Enter the folder:
 
 ```
 cd rick-and-morty-microfrontend 
 ```
 
-instalar todas las dependencias del proyecto:
+Install all project dependencies:
 
 ```
 npm i
 ```
 
-Buildear la aplicacion:
+Build the application:
 
 ```
 npm run build (IMPORTANTE)
 ```
 
-ejecutar el comando para el ambiente de desarrollo
+Run the command for the development environment:
 
 ```
 npm run dev
@@ -80,31 +80,31 @@ npm run dev
 
 #### harry-potter-microfrontend (microfrontend)
 
-Clonar proyecto:
+Clone project:
 
 ```
 git clone git@github.com:Julian-Carelli/harry-potter-microfrontend.git
 ```
 
-Entrar a la carpeta:
+Enter the folder:
 
 ```
 cd harry-potter-microfrontend
 ```
 
-instalar todas las dependencias del proyecto:
+Install all project dependencies:
 
 ```
 npm i
 ```
 
-Buildear la aplicacion:
+Build the application:
 
 ```
 npm run build (IMPORTANTE)
 ```
 
-ejecutar el comando para el ambiente de desarrollo
+Run the command for the development environment:
 
 ```
 npm run dev
@@ -112,46 +112,46 @@ npm run dev
 
 ------------------------------------------------------
 
-Cuando todos los ambientes esten corriendo, se deberia acceder a http://localhost:3000 para poder ver la aplicacion completa
+When all environments are running, you should access http://localhost:3000 to see the complete application.
 
 ------------------------------------------------------
 
 
-### Instalación con docker (SE REQUIRE TENER INSTALADO DOCKER DE FORMA GLOBAL)
+### Installation with Docker (DOCKER MUST BE INSTALLED GLOBALLY)
 
 #### aggregated-microfrontends-hub (HOST)
 
-Clonar proyecto:
+Clone project:
 
 ```
 git clone git@github.com:Julian-Carelli/aggregated-microfrontends-hub.git
 ```
 
-Entrar a la carpeta:
+Enter the folder:
 
 ```
 cd aggregated-microfrontends-hub
 ```
 
-Crear contenedor del proyecto:
+Create a container for the project:
 
 ```
 npm run docker:create
 ```
 
-Entrar al contenedor del proyecto:
+Enter the project's container:
 
 ```
 docker exec -it aggregated-microfrontends-hub-container sh
 ```
 
-instalar todas las dependencias del proyecto:
+Install all project dependencies:
 
 ```
 npm i
 ```
 
-ejecutar el comando para el ambiente de desarrollo
+Run the command for the development environment:
 
 ```
 npm run dev
@@ -161,37 +161,37 @@ npm run dev
 
 #### rick-and-morty-microfrontend (microfrontend)
 
-Clonar proyecto:
+Clone project:
 
 ```
 git clone git@github.com:Julian-Carelli/rick-and-morty-microfrontend.git
 ```
 
-Entrar a la carpeta:
+Enter the folder:
 
 ```
 cd rick-and-morty-microfrontend
 ```
 
-Crear contenedor del proyecto:
+Create a container for the project:
 
 ```
 npm run docker:create
 ```
 
-Entrar al contenedor del proyecto:
+Enter the project's container:
 
 ```
 docker exec -it rick-and-morty-microfrontend-container sh
 ```
 
-instalar todas las dependencias del proyecto:
+Install all project dependencies:
 
 ```
 npm i
 ```
 
-ejecutar el comando para el ambiente de desarrollo
+Run the command for the development environment:
 
 ```
 npm run dev
@@ -201,37 +201,37 @@ npm run dev
 
 #### harry-potter-microfrontend (microfrontend)
 
-Clonar proyecto:
+Clone project:
 
 ```
 git clone git@github.com:Julian-Carelli/harry-potter-microfrontend.git
 ```
 
-Entrar a la carpeta:
+Enter the folder:
 
 ```
 cd harry-potter-microfrontend
 ```
 
-Crear contenedor del proyecto:
+Create a container for the project:
 
 ```
 npm run docker:create
 ```
 
-Entrar al contenedor del proyecto:
+Enter the project's container:
 
 ```
 docker exec -it harry-potter-microfrontend-container sh
 ```
 
-instalar todas las dependencias del proyecto:
+Install all project dependencies:
 
 ```
 npm i
 ```
 
-ejecutar el comando para el ambiente de desarrollo
+Run the command for the development environment:
 
 ```
 npm run dev
@@ -239,12 +239,4 @@ npm run dev
 
 ------------------------------------------------------
 
-Cuando todos los ambientes esten corriendo, se deberia acceder a http://localhost:3000 para poder ver la aplicacion completa
-
-------------------------------------------------------
-
-Para correr los tests:
-
-```
-npm run test
-```
+When all environments are running, you should access http://localhost:3000 to see the complete application.
